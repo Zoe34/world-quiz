@@ -33,6 +33,26 @@ An "End quiz" button will take the player back to the main page with "Start" and
 
 ## Wireframes
 #### Main page:
+!["Main page" screenshot](/docs/wireframes/wireframe1.png)
 
+#### Instructions:
+!["Instructions" screenshot](/docs/wireframes/wireframe2.png)
 
+#### Question 1:
+!["Question1" screenshot](/docs/wireframes/wireframe3.png)
+
+### Correct Answer:
+!["Correct answer message" screenshot](/docs/wireframes/wireframe8.png)
+
+#### Incorrect Answer message:
+!["Incorrect Answer message" screenshot](/docs/wireframes/wireframe9.png)
+
+#### Question 2:
+!["Question2" screenshot](/docs/wireframes/wireframe4.png)
+
+#### Question 3:
+!["Question3" screenshot](/docs/wireframes/wireframe5.png)
+
+#### Question 4:
+!["Question4" screenshot](/docs/wireframes/wireframe6.png)
 
