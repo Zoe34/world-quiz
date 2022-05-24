@@ -1,24 +1,27 @@
+/* ---------Heading */
 h1{
     text-align: center;
     font-size: 2.5rem;
 }
 
-.crater{
-    width: 50%;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+.start{
+    position: center;
 }
 
-.question-one{
+/* ---------First question */
+.imageOne{
+    height: 50%;
+    margin: auto;
+  transform:translate(-50%, -50%);
+  
+}
+
+.questionOne{
     text-align: center;
     font-size: 2rem;
 }
 
-.btn{
-    text-align: center;
-    margin: auto;
-}
+
 
 #overlay{
     width: 100%;

@@ -1,14 +1,7 @@
-
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
+let overlay = document.getElementById("overlay");
 
 
-   if (on()) {{
+let lotsOfElements = [{
       "question-area": "Where are those craters?",
       "image": <"https://cdn.pixabay.com/photo/2016/11/21/17/46/craters-1846775_1280.jpg">
       "options" [
@@ -27,23 +20,25 @@ function off() {
     },
 
     {
-      "question-area": "Where is this?"
-      "image": <https://cdn.pixabay.com/photo/2018/07/09/06/23/vietnam-3525452_1280.jpg>
-      "options": [
+      "question-area": "Where is this?",
+      "image": <"https://cdn.pixabay.com/photo/2018/07/09/06/23/vietnam-3525452_1280.jpg">
+      "options" [
         "China", "Vietnam", "Philippines"
-      ]
+      ],
       "answer" : "Vietnam"
     },
 
     {
-      "question-area": "Where are those mountains?"
-      "image": <https://cdn.pixabay.com/photo/2020/02/14/07/15/mountains-4847687_1280.jpg>
-      "options": [
+      "question-area": "Where are those mountains?",
+      "image": <"https://cdn.pixabay.com/photo/2020/02/14/07/15/mountains-4847687_1280.jpg">
+      "options" [
         "Arizona", "China", "Peru"
-      ]
+      ],
       "answer" : "China"
-    }} else{
-      off();
+    }];
+
+    for (let i = 0; i < lotsOfElements.length; i++) {
+      console.log(lotsOfElements[i]);
     }
     
 

@@ -6,22 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Quiz</title>
 </head>
 
 <body>
-<div id="overlay">
+
+<div class="mainPage">
     <h1 class="heading">World trip quiz</h1>
-
-    <div class="question-area">
-        <p class="question-one">Where are those craters?</p>
-        <img class="crater" src="https://cdn.pixabay.com/photo/2016/11/21/17/46/craters-1846775_1280.jpg" alt="Craters">
-        <button data-type="submit" class="btn">Submit</button>
-    </div>
-
-    <div class="answer-area">
-    </div>
+<button class="start">Start</button>
 </div>
+
+<div class="quiz">
+<div class="questionOne">
+    <h2>Where are those craters?</h2>
+</div>
+<div class="imageOne">
+<img src="https://cdn.pixabay.com/photo/2016/11/21/17/46/craters-1846775_1280.jpg" alt="craters">
+</div>
+<div class="optionsOne">
+    <button>Hawaii</button>
+    <button>Japan</button>
+    <button>Indonesia</button>
+</div>
+</div>
+
+<div id="overlay" class="overlay"></div>
 
     <script src="assets/js/script.js"></script>
 </body>
