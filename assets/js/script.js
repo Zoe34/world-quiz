@@ -1,4 +1,60 @@
-let overlay = document.getElementById("overlay");
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByTagName("button");
+
+  for (let button of buttons) {
+      button.addEventListener("click", function () {
+          if (this.getAttribute("data-type") === "submit") {
+              checkAnswer();
+          } else {
+              let questionNumber = this.getAttribute("data-type");
+              runGame(questionNumber);
+          }
+      });
+  }
+      
+});
+
+function runGame(questionNumber){
+
+}
+
+function displayQuestionOne(){
+
+}
+
+function displayQuestionTwo(){
+  
+}
+
+function displayQuestionThree(){
+  
+}
+
+function displayQuestionFour(){
+  
+}
+
+function correctAnswer(){
+
+}
+
+function incorrectAnswer(){
+
+}
+
+function checkAnswer(){
+
+}
+
+function scoreCount(){
+
+}
+
+function incorrectScoreCount(){
+  
+}
 
 
 let lotsOfElements = [{
@@ -37,9 +93,5 @@ let lotsOfElements = [{
       "answer" : "China"
     }];
 
-    for (let i = 0; i < lotsOfElements.length; i++) {
-      console.log(lotsOfElements[i]);
-    }
-    
 
 
