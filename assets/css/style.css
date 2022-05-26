@@ -4,16 +4,57 @@ h1{
     font-size: 2.5rem;
 }
 
+/* ---------Start button on the main page */
 .start{
-    position: center;
+    margin: 0 auto;
+    display: block;
+    height: 2em;
+    width: 15em;
+    margin-bottom: 1%;
+}
+
+.help{
+    margin: 0 auto;
+    display: block;
+    height: 2em;
+    width: 15em;
+}
+
+/* ---------Option buttons under the question */
+.optionsOne > .buttonDiv{
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+
+.option{
+    margin: 0 auto;
+    height: 2em;
+    width: 15em;
+    display: block;
+    
+}
+
+.optionsOne > .option{
+    margin: 0 auto;
+    position: fixed;
+    text-align: justify;
+}
+
+.buttonDiv{
+    margin: 0 auto;
+    width: 33%;
+    text-align: justify;
 }
 
 /* ---------First question */
 .imageOne{
-    height: 50%;
-    margin: auto;
-  transform:translate(-50%, -50%);
-  
+    height: 30%;
+    width: auto;
+    margin: 0 auto;
+    transform: scale(0.8, 0.8);
+    
 }
 
 .questionOne{
@@ -22,9 +63,4 @@ h1{
 }
 
 
-
-#overlay{
-    width: 100%;
-    height: 90%;
-    background-color: red;
-}
+/* ---------Pop-up question that appears once start is clicked */

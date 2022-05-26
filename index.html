@@ -13,10 +13,11 @@
 
 <div class="mainPage">
     <h1 class="heading">World trip quiz</h1>
-<button class="start">Start</button>
+<button data-type="submit" class="start">Start</button>
+<button data-type="submit" class="help">How to play</button>
 </div>
 
-<div class="quiz">
+<div id="overlay" class="quiz">
 <div class="questionOne">
     <h2>Where are those craters?</h2>
 </div>
@@ -24,9 +25,15 @@
 <img src="https://cdn.pixabay.com/photo/2016/11/21/17/46/craters-1846775_1280.jpg" alt="craters">
 </div>
 <div class="optionsOne">
-    <button  data-type="submit">Hawaii</button>
-    <button  data-type="submit">Japan</button>
-    <button  data-type="submit">Indonesia</button>
+<div class="buttonDiv">
+    <button  class="option" data-type="submit">Hawaii</button>
+</div>
+<div class="buttonDiv">
+    <button  class="option" data-type="submit">Japan</button>
+</div>
+<div class="buttonDiv">
+    <button  class="option" data-type="submit">Indonesia</button>
+</div>
 </div>
 </div>
 
