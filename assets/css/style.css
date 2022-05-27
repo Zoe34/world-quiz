@@ -104,20 +104,12 @@ h1{
     transform: scale(0.8, 0.8);
 }
 
-.nextCorrect{
+.next{
     display: block;
     margin: 0 auto;
     height: 2em;
     width: 15em;
 }
-
-.nextIncorrect{
-    display: block;
-    margin: 0 auto;
-    height: 2em;
-    width: 15em;
-}
-
 
 
 /* ---------incorrect answer confirmation */
