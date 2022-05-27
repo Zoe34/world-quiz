@@ -20,7 +20,7 @@ h1{
     width: 15em;
 }
 
-/* ---------Option buttons under the question */
+/* ---------question one options*/
 .optionsOne > .buttonDiv{
     width: 30%;
     display: inline-block;
@@ -62,9 +62,53 @@ h1{
     font-size: 2rem;
 }
 
-
-/* ---------Pop-up question that appears once start is clicked */
-
 .hide{
     display: none;
 }
+
+/* ---------Second question */
+.imageTwo{
+    height: 30%;
+    width: auto;
+    margin: 0 auto;
+    transform: scale(0.8, 0.8);
+    
+}
+
+.questionTwo{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.optionsTwo > .buttonDiv{
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.optionsTwo > .option{
+    margin: 0 auto;
+    position: fixed;
+    text-align: justify;
+}
+
+/* ---------Correct answer confirmation*/
+.correctHeading{
+    text-align: center;
+    background-color: green;
+    font-size: 2rem;
+    height: 7rem;
+}
+
+#correctPage > div{
+    transform: scale(0.8, 0.8);
+}
+
+#nextOne{
+    display: block;
+    margin: 0 auto;
+    height: 2em;
+    width: 15em;
+    margin-bottom: 1%;
+}
+

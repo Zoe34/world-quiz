@@ -13,8 +13,10 @@
 
 <div class="mainPage">
     <h1 class="heading">World trip quiz</h1>
+<div id="mainButtons">
 <button onclick = "overlayOn()" class="start">Start</button>
 <button class="help">How to play</button>
+</div>
 </div>
 
 <div id="overlay" class="hide">
@@ -26,16 +28,46 @@
 </div>
 <div class="optionsOne">
 <div class="buttonDiv">
-    <button  class="option" data-type="submit">Hawaii</button>
+    <button onclick = "correctOn()" id="hawaii" class="option" data-type="submit">Hawaii</button>
 </div>
 <div class="buttonDiv">
-    <button  class="option" data-type="submit">Japan</button>
+    <button id="japan" class="option" data-type="submit">Japan</button>
 </div>
 <div class="buttonDiv">
-    <button  class="option" data-type="submit">Indonesia</button>
+    <button id="indonesia" class="option" data-type="submit">Indonesia</button>
 </div>
 </div>
 </div>
+
+
+<div id="correctPage" class="hide">
+    <div class="correctDiv">
+        <h2 class="correctHeading">Correct!</h2>
+    </div>
+    <button id="nextOne">Next Question</button>
+</div>
+
+
+
+<div id="overlayTwo" class="hide">
+    <div class="questionTwo">
+        <h2>Where is this beach?</h2>
+    </div>
+    <div class="imageTwo">
+    <img src="https://cdn.pixabay.com/photo/2015/10/09/21/08/whitsundays-australia-979934_1280.jpg" alt="beach">
+    </div>
+    <div class="optionsTwo">
+    <div class="buttonDiv">
+        <button  class="option" data-type="submit">Australia</button>
+    </div>
+    <div class="buttonDiv">
+        <button  class="option" data-type="submit">Turkey</button>
+    </div>
+    <div class="buttonDiv">
+        <button  class="option" data-type="submit">Brazil</button>
+    </div>
+    </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
