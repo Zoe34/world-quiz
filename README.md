@@ -3,6 +3,7 @@
 The project is a quiz intended for kids from the age of 6 years old and above. It is a responsive game, displaying various locations around the world and the aim is for the player to guess correctly where this is. The style is colourful and easy to navigate.
 
 ## User stories
+- As a visiting user I would like to view the instructions.
 - As a new user I would like to access the game by clicking "Start" and I would like to learn the rules by clicking "How to play?"
 - As a new user I would like to spend 5 minutes playing an interactive game, which s responsive on all devices.
 - I would like to learn from the game and I would like it to be easy to navigate
