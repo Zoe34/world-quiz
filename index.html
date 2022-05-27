@@ -12,7 +12,7 @@
 <body>
 
 <div class="mainPage">
-    <h1 class="heading">World trip quiz</h1>
+    <h1 class="heading">World quiz</h1>
 <div id="mainButtons">
 <button onclick = "overlayOn()" class="start">Start</button>
 <button class="help">How to play</button>
@@ -31,10 +31,10 @@
     <button onclick = "correctOn()" id="hawaii" class="option" data-type="submit">Hawaii</button>
 </div>
 <div class="buttonDiv">
-    <button id="japan" class="option" data-type="submit">Japan</button>
+    <button onclick = "incorrectOn()" id="japan" class="option" data-type="submit">Japan</button>
 </div>
 <div class="buttonDiv">
-    <button id="indonesia" class="option" data-type="submit">Indonesia</button>
+    <button onclick = "incorrectOn()" id="indonesia" class="option" data-type="submit">Indonesia</button>
 </div>
 </div>
 </div>
@@ -44,7 +44,14 @@
     <div class="correctDiv">
         <h2 class="correctHeading">Correct!</h2>
     </div>
-    <button id="nextOne">Next Question</button>
+    <button class="nextCorrect">Next Question</button>
+</div>
+
+<div id="incorrectPage" class="hide">
+    <div class="incorrectDiv">
+        <h2 class="incorrectHeading">Incorrect...Sorry:(</h2>
+    </div>
+    <button class="nextIncorrect">Next Question</button>
 </div>
 
 

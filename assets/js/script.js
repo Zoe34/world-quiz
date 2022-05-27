@@ -20,6 +20,7 @@
 
         correctPage.style.display = "hide";
         hawaii.addEventListener("click", correctOn);
+        
     }
 
     function correctOn(){
@@ -28,7 +29,19 @@
 
         let overlay = document.getElementById("overlay");
         overlay.style.display = "none";
+    }
 
+    function incorrectOff(){
+        let japan = document.getElementById("japan");
+        let indonesia = document.getElementById("indonesia");
+
+        japan.addEventListener("click", incorrectOn);
+        indonesia.addEventListener("click", incorrectOn);
+    }
+
+    function incorrectOn(){
+        document.getElementById("incorrectPage").classList.remove("hide");
+        document.getElementById("overlay").style.display = "none";
     }
 
 

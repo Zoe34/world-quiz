@@ -100,15 +100,40 @@ h1{
     height: 7rem;
 }
 
-#correctPage > div{
+#correctPage > .correctDiv{
     transform: scale(0.8, 0.8);
 }
 
-#nextOne{
+.nextCorrect{
     display: block;
     margin: 0 auto;
     height: 2em;
     width: 15em;
-    margin-bottom: 1%;
 }
+
+.nextIncorrect{
+    display: block;
+    margin: 0 auto;
+    height: 2em;
+    width: 15em;
+}
+
+
+
+/* ---------incorrect answer confirmation */
+.incorrectHeading{
+    text-align: center;
+    background-color: green;
+    font-size: 2rem;
+    height: 7rem;
+}
+
+#incorrectPage > .incorrectDiv{
+    transform: scale(0.8, 0.8);
+}
+
+
+
+
+
 
