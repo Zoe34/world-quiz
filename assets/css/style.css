@@ -29,10 +29,12 @@ h1{
 }
 
 .option{
-    margin: 0 auto;
+    margin-left: 40%;
     height: 2em;
     width: 15em;
     display: block;
+    text-align: center;
+
     
 }
 
