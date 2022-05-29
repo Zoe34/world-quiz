@@ -26,9 +26,11 @@ function correctOn() {
 
     let overlay = document.getElementById("overlay");
     overlay.style.display = "none";
-}
 
+}
 function incorrectOff() {
+
+    document.getElementById("incorrectPage").style.display = "none";
     let japan = document.getElementById("japan");
     let indonesia = document.getElementById("indonesia");
 
@@ -41,18 +43,4 @@ function incorrectOn() {
     document.getElementById("overlay").style.display = "none";
 }
 
-function questionTwoOff() {
-    let nextQuestion = document.getElementsByClassName("next");
-    let overlayTwo = document.getElementById("overlayTwo");
-
-    nextQuestion.addEventListener("click", questionTwoOn);
-
-}
-
-function questionTwoOn() {
-    document.getElementById("overlayTwo").classList.remove("hide");
-    correctPage.style.display = "none";
-    incorrectPage.style.display = "none";
-
-}
 
