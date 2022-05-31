@@ -126,6 +126,33 @@ h1{
     transform: scale(0.8, 0.8);
 }
 
+/* ---------Third question*/
+
+.imageThree{
+    height: 30%;
+    width: auto;
+    margin: 0 auto;
+    transform: scale(0.8, 0.8);
+    
+}
+
+.questionThree{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.optionsThree > .buttonDiv{
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.optionsThree > .option{
+    margin: 0 auto;
+    position: fixed;
+    text-align: justify;
+}
+
 
 
 

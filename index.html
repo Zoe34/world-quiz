@@ -44,16 +44,15 @@
     <div class="correctDiv">
         <h2 class="correctHeading">Correct!</h2>
     </div>
-    <button onclick="questionTwoOn()" class="next">Next Question</button>
+    <button onclick = "overlayTwoOn()" class="next">Next Question</button>
 </div>
 
 <div id="incorrectPage" class="hide">
     <div class="incorrectDiv">
         <h2 class="incorrectHeading">Incorrect...Sorry:(</h2>
     </div>
-    <button onclick="questionTwoOn()" class="next">Next Question</button>
+    <button onclick = "overlayTwoOn()" class="next">Next Question</button>
 </div>
-
 
 
 <div id="overlayTwo" class="hide">
@@ -65,13 +64,33 @@
     </div>
     <div class="optionsTwo">
     <div class="buttonDiv">
-        <button  onclick = "correctOn()" id="australia" class="option" data-type="submit">Australia</button>
+        <button  onclick = "correctTwoOn()" id="australia" class="option" data-type="submit">Australia</button>
     </div>
     <div class="buttonDiv">
-        <button onclick = "incorrectOn()" id="turkey" class="option" data-type="submit">Turkey</button>
+        <button onclick = "incorrectTwoOn()" id="turkey" class="option" data-type="submit">Turkey</button>
     </div>
     <div class="buttonDiv">
-        <button onclick = "incorrectOn()" id="brazil" class="option" data-type="submit">Brazil</button>
+        <button onclick = "incorrectTwoOn()" id="brazil" class="option" data-type="submit">Brazil</button>
+    </div>
+    </div>
+</div>
+
+<div id="overlayThree" class="hide">
+    <div class="questionThree">
+        <h2>Where is this?</h2>
+    </div>
+    <div class="imageThree">
+    <img src="https://cdn.pixabay.com/photo/2018/07/09/06/23/vietnam-3525452_1280.jpg" alt="mountains">
+    </div>
+    <div class="optionsThree">
+    <div class="buttonDiv">
+        <button  onclick = "correctOn()" id="china" class="option" data-type="submit">China</button>
+    </div>
+    <div class="buttonDiv">
+        <button onclick = "incorrectOn()" id="vietnam" class="option" data-type="submit">Vietnam</button>
+    </div>
+    <div class="buttonDiv">
+        <button onclick = "incorrectOn()" id="philippines" class="option" data-type="submit">Philippines</button>
     </div>
     </div>
 </div>

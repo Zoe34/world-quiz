@@ -5,8 +5,6 @@ function overlayOff() {
 
     overlay.style.display = "none";
     start.addEventListener("click", overlayOn);
-
-
 }
 
 function overlayOn() {
@@ -17,6 +15,7 @@ function overlayOn() {
 function correctOff() {
     let correctPage = document.getElementById("correctPage");
     correctPage.style.display = "none";
+    
     let hawaii = document.getElementById("hawaii");
     hawaii.addEventListener("click", correctOn);
 }
@@ -43,4 +42,49 @@ function incorrectOn() {
     document.getElementById("overlay").style.display = "none";
 }
 
+
+function overlayTwoOff(){
+let overlayTwo = getElementById("overlayTwo");
+overlayTwo.style.display = "none";
+let next = getElementsByClassName("next");
+next.addEventListener("click", overlayTwoOn)
+}
+
+function overlayTwoOn(){
+    document.getElementById("overlayTwo").classList.remove("hide");
+    document.getElementById("incorrectPage").style.display = "none";
+    document.getElementById("correctPage").style.display = "none";
+}
+
+
+function correctTwoOff() {
+    let correctPage = document.getElementById("correctPage");
+    correctPage.style.display = "none";
+    
+    let australia = document.getElementById("australia");
+    australia.addEventListener("click", correctTwoOn);
+}
+
+function correctTwoOn() {
+    document.getElementById("correctPage").classList.remove("hide");
+    correctPage.style.display = "visible";
+
+    let overlayTwo = document.getElementById("overlayTwo");
+    overlayTwo.style.display = "none";
+
+}
+function incorrectTwoOff() {
+
+    document.getElementById("incorrectPage").style.display = "none";
+    let turkey = document.getElementById("turkey");
+    let brazil = document.getElementById("brazil");
+
+    turkey.addEventListener("click", incorrectTwoOn);
+    brazil.addEventListener("click", incorrectTwoOn);
+}
+
+function incorrectTwoOn() {
+    document.getElementById("incorrectPage").classList.remove("hide");
+    
+}
 
