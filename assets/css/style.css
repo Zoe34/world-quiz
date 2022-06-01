@@ -20,6 +20,25 @@ h1{
     width: 15em;
 }
 
+.helpHeading{
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* ---------How to play */
+.backButton{
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.explanation{
+    text-align: center;
+    font-size: 130%;
+}
+
+
 /* ---------question one options*/
 .optionsOne > .buttonDiv{
     width: 30%;
@@ -148,6 +167,33 @@ h1{
 }
 
 .optionsThree > .option{
+    margin: 0 auto;
+    position: fixed;
+    text-align: justify;
+}
+
+/* ---------Fourth question */
+
+.imageFour{
+    height: 30%;
+    width: auto;
+    margin: 0 auto;
+    transform: scale(0.8, 0.8);
+    
+}
+
+.questionFour{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.optionsFour > .buttonDiv{
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.optionsFour > .option{
     margin: 0 auto;
     position: fixed;
     text-align: justify;
