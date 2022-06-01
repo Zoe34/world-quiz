@@ -15,6 +15,27 @@ function displayNextOverlay() {
 
 function initialiseGame() {
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
+    document.getElementById("helpSection").addEventListener("click", helpOn);
+    document.getElementById("back").addEventListener("click", backOn);
+
+    document.getElementById("hawaii").addEventListener("click", correctOn);
+    document.getElementById("japan").addEventListener("click", incorrectOn);
+    document.getElementById("indonesia").addEventListener("click", incorrectOn);
+
+    document.getElementById("australia").addEventListener("click", correctOn);
+    document.getElementById("turkey").addEventListener("click", incorrectOn);
+    document.getElementById("brazil").addEventListener("click", incorrectOn);
+
+    document.getElementById("correctAnswer").addEventListener("click", displayNextOverlay);
+    document.getElementById("incorrectAnswer").addEventListener("click", displayNextOverlay);
+
+    document.getElementById("china").addEventListener("click", correctOn);
+    document.getElementById("vietnam").addEventListener("click", incorrectOn);
+    document.getElementById("philippines").addEventListener("click", incorrectOn);
+
+    document.getElementById("arizona").addEventListener("click", correctOn);
+    document.getElementById("china").addEventListener("click", incorrectOn);
+    document.getElementById("peru").addEventListener("click", incorrectOn);
 
 }
 

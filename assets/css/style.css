@@ -1,11 +1,11 @@
 /* ---------Heading */
-h1{
+h1 {
     text-align: center;
     font-size: 2.5rem;
 }
 
 /* ---------Start button on the main page */
-.start{
+.start {
     margin: 0 auto;
     display: block;
     height: 2em;
@@ -13,112 +13,112 @@ h1{
     margin-bottom: 1%;
 }
 
-.help{
+.help {
     margin: 0 auto;
     display: block;
     height: 2em;
     width: 15em;
 }
 
-.helpHeading{
+.helpHeading {
     text-align: center;
     font-size: 2rem;
 }
 
 /* ---------How to play */
-.backButton{
+.backButton {
     text-align: center;
     font-size: 1rem;
     margin: 0 auto;
     display: block;
 }
 
-.explanation{
+.explanation {
     text-align: center;
     font-size: 130%;
 }
 
 
 /* ---------question one options*/
-.optionsOne > .buttonDiv{
+.optionsOne>.buttonDiv {
     width: 30%;
     display: inline-block;
     margin: 0 auto;
-    
+
 }
 
-.option{
+.option {
     margin-left: 40%;
     height: 2em;
     width: 15em;
     display: block;
     text-align: center;
 
-    
+
 }
 
-.optionsOne > .option{
+.optionsOne>.option {
     margin: 0 auto;
     position: fixed;
     text-align: justify;
 }
 
-.buttonDiv{
+.buttonDiv {
     margin: 0 auto;
     width: 33%;
     text-align: justify;
 }
 
 /* ---------First question */
-.imageOne{
+.imageOne {
     height: 30%;
     width: auto;
     margin: 0 auto;
     transform: scale(0.8, 0.8);
-    
+
 }
 
-.questionOne{
+.questionOne {
     text-align: center;
     font-size: 2rem;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: block;
 }
 
 /* ---------Second question */
-.imageTwo{
+.imageTwo {
     height: 30%;
     width: auto;
     margin: 0 auto;
     transform: scale(0.8, 0.8);
-    
+
 }
 
-.questionTwo{
+.questionTwo {
     text-align: center;
     font-size: 2rem;
 }
 
-.optionsTwo > .buttonDiv{
+.optionsTwo>.buttonDiv {
     width: 30%;
     display: inline-block;
     margin: 0 auto;
 }
 
-.optionsTwo > .option{
+.optionsTwo>.option {
     margin: 0 auto;
     position: fixed;
     text-align: justify;
 }
 
 /* ---------Correct answer confirmation*/
-.correctHeading{
+.correctHeading {
     text-align: center;
     background-color: rgb(18, 156, 18);
     font-size: 2rem;
@@ -127,11 +127,11 @@ h1{
     display: block;
 }
 
-#correctPage > .correctDiv{
+#correctPage>.correctDiv {
     transform: scale(0.8, 0.8);
 }
 
-.next{
+.next {
     display: block;
     margin: 0 auto;
     height: 2em;
@@ -142,7 +142,7 @@ h1{
 
 
 /* ---------incorrect answer confirmation */
-.incorrectHeading{
+.incorrectHeading {
     text-align: center;
     background-color: rgb(18, 156, 18);
     font-size: 2rem;
@@ -151,32 +151,32 @@ h1{
     display: block;
 }
 
-#incorrectPage > .incorrectDiv{
+#incorrectPage>.incorrectDiv {
     transform: scale(0.8, 0.8);
 }
 
 /* ---------Third question*/
 
-.imageThree{
+.imageThree {
     height: 30%;
     width: auto;
     margin: 0 auto;
     transform: scale(0.8, 0.8);
-    
+
 }
 
-.questionThree{
+.questionThree {
     text-align: center;
     font-size: 2rem;
 }
 
-.optionsThree > .buttonDiv{
+.optionsThree>.buttonDiv {
     width: 30%;
     display: inline-block;
     margin: 0 auto;
 }
 
-.optionsThree > .option{
+.optionsThree>.option {
     margin: 0 auto;
     position: fixed;
     text-align: justify;
@@ -184,26 +184,26 @@ h1{
 
 /* ---------Fourth question */
 
-.imageFour{
+.imageFour {
     height: 30%;
     width: auto;
     margin: 0 auto;
     transform: scale(0.8, 0.8);
-    
+
 }
 
-.questionFour{
+.questionFour {
     text-align: center;
     font-size: 2rem;
 }
 
-.optionsFour > .buttonDiv{
+.optionsFour>.buttonDiv {
     width: 30%;
     display: inline-block;
     margin: 0 auto;
 }
 
-.optionsFour > .option{
+.optionsFour>.option {
     margin: 0 auto;
     position: fixed;
     text-align: justify;
@@ -211,13 +211,13 @@ h1{
 
 /* ---------Overlay after the last question was completed */
 
-.finalStatement{
+.finalStatement {
     display: block;
     text-align: center;
     font-size: 1.5rem;
 }
 
-.endQuiz{
+.endQuiz {
     display: block;
     margin: 0 auto;
     height: 2em;
@@ -225,7 +225,7 @@ h1{
 
 }
 
-.greenBox{
+.greenBox {
     width: 60%;
     background-color: rgb(18, 156, 18);
     margin: auto;
@@ -233,9 +233,3 @@ h1{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-
-
-
-
-
-
