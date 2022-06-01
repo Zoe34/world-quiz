@@ -1,3 +1,5 @@
+
+
 let currentQuestion = 0;
 
 function displayNextOverlay() {
@@ -14,6 +16,7 @@ function displayNextOverlay() {
 }
 
 function initialiseGame() {
+    showElement("mainPage");
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
     document.getElementById("helpSection").addEventListener("click", helpOn);
     document.getElementById("back").addEventListener("click", backOn);
@@ -29,12 +32,12 @@ function initialiseGame() {
     document.getElementById("correctAnswer").addEventListener("click", displayNextOverlay);
     document.getElementById("incorrectAnswer").addEventListener("click", displayNextOverlay);
 
-    document.getElementById("china").addEventListener("click", correctOn);
-    document.getElementById("vietnam").addEventListener("click", incorrectOn);
+    document.getElementById("china").addEventListener("click", incorrectOn);
+    document.getElementById("vietnam").addEventListener("click", correctOn);
     document.getElementById("philippines").addEventListener("click", incorrectOn);
 
-    document.getElementById("arizona").addEventListener("click", correctOn);
-    document.getElementById("china").addEventListener("click", incorrectOn);
+    document.getElementById("arizona").addEventListener("click", incorrectOn);
+    document.getElementById("chinaTwo").addEventListener("click", correctOn);
     document.getElementById("peru").addEventListener("click", incorrectOn);
 
 }
@@ -61,12 +64,15 @@ function helpOn() {
 }
 
 function backOff() {
-    let backButton = document.getElementsByClassName("backButton");
-    backButton.addEventListener("click", backOn);
+    let back = document.getElementById("back");
+    back.addEventListener("click", backOn);
 }
 
 function backOn() {
     showElement("mainPage");
+    showElement("mainButtons");
+    hideElement("helpPage");
+
 }
 
 function overlayOff() {
@@ -149,6 +155,12 @@ function correctOff() {
 
     let australia = document.getElementById("australia");
     australia.addEventListener("click", correctOn);
+
+    let vietnam = document.getElementById("vietnam");
+    vietnam.addEventListener("click", correctOn);
+
+    let chinaTwo = document.getElementById("chinaTwo");
+    chinaTwo.addEventListener("click", correctOn);
 }
 
 function correctOn() {
@@ -173,6 +185,18 @@ function incorrectOff() {
 
     turkey.addEventListener("click", incorrectOn);
     brazil.addEventListener("click", incorrectOn);
+
+    let china = document.getElementById("china");
+    let philippines = document.getElementById("philippines");
+
+    china.addEventListener("click", incorrectOn);
+    philippines.addEventListener("click", incorrectOn);
+
+    let arizona = document.getElementById("arizona");
+    let peru = document.getElementById("peru");
+
+    arizona.addEventListener("click", incorrectOn);
+    peru.addEventListener("click", incorrectOn);
 }
 
 function incorrectOn() {
