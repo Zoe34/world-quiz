@@ -1,60 +1,128 @@
+let currentQuestion = 0;
 
-function helpOff(){
-    let helpPage = document.getElementById("helpPage");
-    helpPage.style.display = "none";
+function displayNextOverlay() {
+    if (currentQuestion === 1) {
+        overlayTwoOn();
+    } else if (currentQuestion === 2) {
+        overlayThreeOn();
+    } else if (currentQuestion === 3) {
+        overlayFourOn();
+    } else {
+        endOn();
+    }
+    currentQuestion++;
+}
+
+function initialiseGame() {
+    document.getElementById("startQuiz").addEventListener("click", overlayOn);
+
+}
+
+function hideElement(elementId) {
+    document.getElementById(elementId).classList.remove("show");
+    document.getElementById(elementId).classList.add("hide");
+}
+
+function showElement(elementId) {
+    document.getElementById(elementId).classList.remove("hide");
+    document.getElementById(elementId).classList.add("show");
+}
+
+function helpOff() {
+    hideElement("helpPage");
     let help = document.getElementsByClassName("help");
     help.addEventListener("click", helpOn);
 }
 
-function helpOn(){
-    document.getElementById("helpPage").classList.remove("hide");
-    document.getElementById("mainButtons").style.display = "none";
+function helpOn() {
+    showElement("helpPage");
+    hideElement("mainButtons");
 }
 
-function backOff(){
+function backOff() {
     let backButton = document.getElementsByClassName("backButton");
     backButton.addEventListener("click", backOn);
 }
 
-function backOn(){
-  
+function backOn() {
+    showElement("mainPage");
 }
-
 
 function overlayOff() {
     let overlay = document.getElementById("overlay");
     let start = document.getElementsByClassName("start");
 
-    overlay.style.display = "none";
+    overlay.classList.add("hide");
     start.addEventListener("click", overlayOn);
 }
 
 function overlayOn() {
-    document.getElementById("overlay").classList.remove("hide");
-    document.getElementById("mainButtons").style.display = "none";
+    currentQuestion++;
+    showElement("overlay");
+    hideElement("mainButtons");
 }
 
-function overlayTwoOff(){
-    let overlayTwo = document.getElementById("overlayTwo");
-    overlayTwo.style.display = "none";
+function overlayTwoOff() {
+    hideElement("overlayTwo");
     let next = document.getElementsByClassName("next");
-    next.addEventListener("click", overlayTwoOn)
-    }
-    
-function overlayTwoOn(){
-    document.getElementById("overlayTwo").classList.remove("hide");
-    document.getElementById("incorrectPage").style.display = "none";
-    document.getElementById("correctPage").style.display = "none";
+    next.addEventListener("click", overlayTwoOn);
 }
 
+function overlayTwoOn() {
+    showElement("overlayTwo");
+    hideElement("incorrectPage");
+    hideElement("correctPage");
+}
 
+function overlayThreeOff() {
+    hideElement("overlayThree");
+    let next = document.getElementsByClassName("next");
+    next.addEventListener("click", overlayThreeOn);
+}
 
+function overlayThreeOn() {
+    showElement("overlayThree");
+    hideElement("incorrectPage");
+    hideElement("correctPage");
+}
+
+function overlayFourOff() {
+    hideElement("overlayFour");
+    let next = document.getElementsByClassName("next");
+    next.addEventListener("click", overlayThreeOn);
+}
+
+function overlayFourOn() {
+    showElement("overlayFour");
+    hideElement("incorrectPage");
+    hideElement("correctPage");
+}
+
+function endOff() {
+    hideElement("endOfQuiz");
+    let next = document.getElementsByClassName("next");
+    next.addEventListener("click", endOn);
+}
+
+function endOn() {
+    showElement("endOfQuiz");
+    hideElement("incorrectPage");
+    hideElement("correctPage");
+    let endQuiz = document.getElementById("endQuiz");
+    endQuiz.addEventListener("click", showMainPage);
+    currentQuestion = 0;
+}
+
+function showMainPage() {
+    showElement("mainPage");
+    showElement("mainButtons");
+    hideElement("endOfQuiz");
+}
 
 
 function correctOff() {
-    let correctPage = document.getElementById("correctPage");
-    correctPage.style.display = "none";
-    
+    hideElement("correctPage");
+
     let hawaii = document.getElementById("hawaii");
     hawaii.addEventListener("click", correctOn);
 
@@ -63,17 +131,16 @@ function correctOff() {
 }
 
 function correctOn() {
-    document.getElementById("correctPage").classList.remove("hide");
-
-    let overlay = document.getElementById("overlay");
-    overlay.style.display = "none";
-    let overlayTwo = document.getElementById("overlayTwo");
-    overlayTwo.style.display = "none";
+    showElement("correctPage");
+    hideElement("overlay");
+    hideElement("overlayTwo");
+    hideElement("overlayThree");
+    hideElement("overlayFour");
 
 }
 function incorrectOff() {
 
-    document.getElementById("incorrectPage").style.display = "none";
+    hideElement("incorrectPage");
     let japan = document.getElementById("japan");
     let indonesia = document.getElementById("indonesia");
 
@@ -88,10 +155,15 @@ function incorrectOff() {
 }
 
 function incorrectOn() {
-    document.getElementById("incorrectPage").classList.remove("hide");
-    document.getElementById("overlay").style.display = "none";
-    document.getElementById("overlayTwo").style.display = "none";
+    showElement("incorrectPage");
+    hideElement("overlay");
+    hideElement("overlayTwo");
+    hideElement("overlayThree");
+    hideElement("overlayFour");
 }
+
+window.addEventListener('DOMContentLoaded', initialiseGame);
+
 
 
 

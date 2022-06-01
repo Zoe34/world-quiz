@@ -14,7 +14,7 @@
 <div id="mainPage">
     <h1 class="heading">World quiz</h1>
 <div id="mainButtons">
-<button onclick = "overlayOn()" class="start">Start</button>
+<button id="startQuiz" class="start">Start</button>
 <button onclick = "helpOn()" class="help">How to play</button>
 </div>
 </div>
@@ -52,14 +52,14 @@
     <div class="correctDiv">
         <h2 class="correctHeading">Correct!</h2>
     </div>
-    <button onclick = "overlayTwoOn()" class="next">Next Question</button>
+    <button onclick = "displayNextOverlay()" class="next">Next Question</button>
 </div>
 
 <div id="incorrectPage" class="hide">
     <div class="incorrectDiv">
         <h2 class="incorrectHeading">Incorrect...Sorry:(</h2>
     </div>
-    <button onclick = "overlayTwoOn()" class="next">Next Question</button>
+    <button onclick = "displayNextOverlay()" class="next">Next Question</button>
 </div>
 
 
@@ -121,6 +121,14 @@
         <button onclick = "incorrectOn()" id="peru" class="option" data-type="submit">Peru</button>
     </div>
     </div>
+</div>
+
+<div id="endOfQuiz" class="hide">
+    <div class="greenBox">
+    <p class="finalStatement">Congratulations, you completed the quiz!
+    </p>
+    </div>
+    <button id="endQuiz" class="endQuiz">End Quiz</button>
 </div>
 
     <script src="assets/js/script.js"></script>

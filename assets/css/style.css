@@ -87,6 +87,10 @@ h1{
     display: none;
 }
 
+.show{
+    display: block;
+}
+
 /* ---------Second question */
 .imageTwo{
     height: 30%;
@@ -116,9 +120,11 @@ h1{
 /* ---------Correct answer confirmation*/
 .correctHeading{
     text-align: center;
-    background-color: green;
+    background-color: rgb(18, 156, 18);
     font-size: 2rem;
     height: 7rem;
+    margin: 0 auto;
+    display: block;
 }
 
 #correctPage > .correctDiv{
@@ -130,15 +136,19 @@ h1{
     margin: 0 auto;
     height: 2em;
     width: 15em;
+    background-color: rgb(102, 163, 247);
+    border: none;
 }
 
 
 /* ---------incorrect answer confirmation */
 .incorrectHeading{
     text-align: center;
-    background-color: green;
+    background-color: rgb(18, 156, 18);
     font-size: 2rem;
     height: 7rem;
+    margin: 0 auto;
+    display: block;
 }
 
 #incorrectPage > .incorrectDiv{
@@ -197,6 +207,31 @@ h1{
     margin: 0 auto;
     position: fixed;
     text-align: justify;
+}
+
+/* ---------Overlay after the last question was completed */
+
+.finalStatement{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.endQuiz{
+    display: block;
+    margin: 0 auto;
+    height: 2em;
+    width: 15em;
+
+}
+
+.greenBox{
+    width: 60%;
+    background-color: rgb(18, 156, 18);
+    margin: auto;
+    padding: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
