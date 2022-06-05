@@ -5,23 +5,22 @@ The project is a quiz intended for kids from the age of 6 years old and above. I
 ## User stories
 - As a visiting user I would like to view the instructions.
 - As a new user I would like to access the game by clicking "Start" and I would like to learn the rules by clicking "How to play?"
-- As a new user I would like to spend 5 minutes playing an interactive game, which s responsive on all devices.
-- I would like to learn from the game and I would like it to be easy to navigate
+- As a new user I would like to play an interactive game, which is responsive on all devices.
 
 ## Features
 #### Heading:
-A big and clear heading called "World trip quiz"
+A big and clear heading called "World quiz".
 #### Question section:
-A question asking the user where in the world they think a place is located
+A question asking the user where in the world they think a place is located.
 #### Question Image:
 The image is underneath the question and shows the player a remote location which is used to guess the correct answer.
 #### Answer options:
 Under the image section there are 3 answer options. The user has to pick one - this follows a message confirming if the answer was correct or not.
-#### Submit button:
-- The user presses the submit button after picking their location of choice. An overlay message appears with the sign "Correct" or "Incorrect...sorry".
-- The Correct option leads to a button saying "Next question"
-The incorrect option leads to the message "Incorrect...sorry" and the user can access a button saying "Next Question".
-- After the user answers their last question this leads to a "congratulations" message and shows the player's score.
+#### Next button:
+- An overlay message appears with the sign "Correct" or "Incorrect...sorry". The user presses the next button after picking their location of choice. 
+- Both correct and incorrect slides have a "next question" button, which leads to the next question.
+#### Congratulations page:
+- After the user answers their last question this leads to a "congratulations" message.
 An "End quiz" button will take the player back to the main page with "Start" and "How to play".
 
 ## Future features
@@ -30,49 +29,42 @@ An "End quiz" button will take the player back to the main page with "Start" and
 
 ## Typography and color scheme
 - The main colours in this project are blue an green to make the buttons stand out and make the game more intuitive. 
-- The heading is always blue and the answer options are a light green colour.
+- The answer options are always a light green colour and the "next question" buttons are all a neutral blue.
 
 ## Wireframes
 #### Main page:
-!["Main page" screenshot](/docs/wireframes/wireframe1.png)
+!["Main page" screenshot](/docs/wireframes/start-page.png)
 
 #### Instructions:
-!["Instructions" screenshot](/docs/wireframes/wireframe2.png)
+!["Instructions" screenshot](/docs/wireframes/help-page.png)
 
 #### Question 1:
-!["Question1" screenshot](/docs/wireframes/wireframe3.png)
+!["Question1" screenshot](/docs/wireframes/question-one.png)
 
-### Correct Answer:
-!["Correct answer message" screenshot](/docs/wireframes/wireframe8.png)
+#### Correct Answer:
+!["Correct answer message" screenshot](/docs/wireframes/correct.png)
 
 #### Incorrect Answer message:
-!["Incorrect Answer message" screenshot](/docs/wireframes/wireframe9.png)
+!["Incorrect Answer message" screenshot](/docs/wireframes/incorrect.png)
 
 #### Question 2:
-!["Question2" screenshot](/docs/wireframes/wireframe4.png)
+!["Question2" screenshot](/docs/wireframes/question-two.png)
 
 #### Question 3:
-!["Question3" screenshot](/docs/wireframes/wireframe5.png)
+!["Question3" screenshot](/docs/wireframes/question-three.png)
 
 #### Question 4:
-!["Question4" screenshot](/docs/wireframes/wireframe6.png)
+!["Question4" screenshot](/docs/wireframes/question-four.png)
+
+#### Confirmation page:
+!["confirmation" screenshot](/docs/wireframes/end-page.png)
+
 
 ## Technology
 This project was created using the Google browser and Gitpod.
-### To open through Gitpod:
-- Click on "Dashboard"
-- Click on the most recent world quiz workspace
-- Open the project through Visual Studio Code or in the browser (Google is recommended)
-- To see the preview in the browser type "python3 -m http.server" into the gitpod terminal.
-
-### To open through Github:
-- Enter https://github.com/Zoe34/world-quiz.git into the browser
-- Click on the green Gitpod button
-- Click on the World Quiz workspace that shows up
-- Open in the browser or via Visual Studio Code
 
 ### Other tools used:
-- Google fonts
+- Google fonts - used in the project. The font used was Raleway.
 - Balsamiq wireframes to create the wireframes
 - HTML and CSS languages
 
@@ -95,6 +87,18 @@ This project was created using the Google browser and Gitpod.
 - Change the settings of the branch to main branch and click save.
 - The link https://zoe34.github.io/world-quiz/ can be accessed by opening Github pages and the link appears on a green background.
 - The website was made public by changing the visibility to public in the settings section.
+
+### To open through Gitpod:
+- Click on "Dashboard"
+- Click on the most recent world quiz workspace
+- Open the project through Visual Studio Code or in the browser (Google is recommended)
+- To see the preview in the browser type "python3 -m http.server" into the gitpod terminal.
+
+### To open through Github:
+- Enter https://github.com/Zoe34/world-quiz.git into the browser
+- Click on the green Gitpod button
+- Click on the World Quiz workspace that shows up
+- Open in the browser or via Visual Studio Code
 
 ## Credits:
 - Pixabay.com was used to generate the images for this project

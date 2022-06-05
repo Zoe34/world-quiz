@@ -16,9 +16,31 @@ function displayNextQuestion() {
     currentQuestion++;
 }
 
-function Score() {
-    let oldScore = parseInt(document.getElementById("").innerText);
-    document.getElementById("").innerText = ++oldScore;
+function checkScore(){
+    if(document.getElementById('hawaii').clicked == true){
+        incrementCorrectScore();
+    } else if (document.getElementById('australia').clicked == true){
+        incrementCorrectScore();
+
+    } else if (document.getElementById('vietnam').clicked == true){
+        incrementCorrectScore();
+
+    } else if (document.getElementById('chinaTwo').clicked == true){
+        incrementCorrectScore();
+
+    } else{
+        incrementIncorrectScore();
+    }
+}
+
+function incrementCorrectScore() {
+    let oldScore = document.getElementById("score").innerText;
+    document.getElementById("score").innerText = ++oldScore;
+    
+}
+function incrementIncorrectScore(){
+    let oldScore = document.getElementById("incorrect").innerText;
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 function initialiseGame() {
