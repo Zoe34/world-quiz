@@ -16,6 +16,11 @@ function displayNextQuestion() {
     currentQuestion++;
 }
 
+function Score() {
+    let oldScore = parseInt(document.getElementById("").innerText);
+    document.getElementById("").innerText = ++oldScore;
+}
+
 function initialiseGame() {
     showElement("mainPage");
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
