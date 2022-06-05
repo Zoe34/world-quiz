@@ -99,6 +99,7 @@ This project was created using the Google browser and Gitpod.
 - Click on the green Gitpod button
 - Click on the World Quiz workspace that shows up
 - Open in the browser or via Visual Studio Code
+- To see the preview in the browser type "python3 -m http.server" into the gitpod terminal.
 
 ## Credits:
 - Pixabay.com was used to generate the images for this project

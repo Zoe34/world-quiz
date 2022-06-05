@@ -1,5 +1,7 @@
 
-
+/**
+ * Allows for the displaying of questions in order. When game ends on question 4 the code resets
+ */
 let currentQuestion = 0;
 
 function displayNextQuestion() {
@@ -43,6 +45,10 @@ function incrementIncorrectScore(){
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
+/**
+ * When a button is clicked during the game, the appropriate function is called e.g.,
+ * after answering correctly a confirmation appears: "Correct!"
+ */
 function initialiseGame() {
     showElement("mainPage");
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
@@ -70,21 +76,37 @@ function initialiseGame() {
 
 }
 
+/**
+ * The hideElement function allows to hide elements that are not supposed to be shown on certain
+ * pages. E.g. when question one is shown, other questions will be hidden. 
+ * When question two is shown, other questions will be hidden.
+ */
 function hideElement(elementId) {
     document.getElementById(elementId).classList.remove("show");
     document.getElementById(elementId).classList.add("hide");
 }
 
+/**
+ * The showElement function allows to show specific overlays during the game.
+ * For example question one must be shown for the player to be able to answer.
+ * When showing one overlay the others will be hidden.
+ */
 function showElement(elementId) {
     document.getElementById(elementId).classList.remove("hide");
     document.getElementById(elementId).classList.add("show");
 }
 
+/**
+ * Help page is displayed after clicking "how to play"
+ */
 function helpOn() {
     showElement("helpPage");
     hideElement("mainButtons");
 }
 
+/**
+ * Back button that takes user from the help page back to start page.
+ */
 function backOn() {
     showElement("mainPage");
     showElement("mainButtons");
@@ -92,29 +114,47 @@ function backOn() {
 
 }
 
+/**
+ * Question one displayed
+ */
 function overlayOn() {
     currentQuestion++;
     showElement("overlay");
     hideElement("mainButtons");
 }
+
+/**
+ * Question two displayed
+ */
 function overlayTwoOn() {
     showElement("overlayTwo");
     hideElement("incorrectPage");
     hideElement("correctPage");
 }
 
+/**
+ * Question three displayed
+ */
 function overlayThreeOn() {
     showElement("overlayThree");
     hideElement("incorrectPage");
     hideElement("correctPage");
 }
 
+/**
+ * Question four displayed
+ */
 function overlayFourOn() {
     showElement("overlayFour");
     hideElement("incorrectPage");
     hideElement("correctPage");
 }
 
+/**
+ * Confirmation page when quiz has ended.
+ * All other pages hidden
+ * Option to return to main page by clicking "end quiz"
+ */
 function endOn() {
     showElement("endOfQuiz");
     hideElement("incorrectPage");
@@ -130,6 +170,9 @@ function showMainPage() {
     hideElement("endOfQuiz");
 }
 
+/**
+ * Overlay displays after user chooses correct answer
+ */
 function correctOn() {
     showElement("correctPage");
     hideElement("overlay");
@@ -139,6 +182,9 @@ function correctOn() {
 
 }
 
+/**
+ * Overlay displays after user chooses incorrect answer
+ */
 function incorrectOn() {
     showElement("incorrectPage");
     hideElement("overlay");
