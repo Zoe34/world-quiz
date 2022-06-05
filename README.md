@@ -81,3 +81,22 @@ This project was created using the Google browser and Gitpod.
 - When the code was passed through JSHint it returned no errors - the JavaScript code was pasted into JSHint.
 - When the code was passed through W3C Validator and showed no errors - the link https://zoe34.github.io/world-quiz/index.html was pasted into the Address bar.
 
+### Test Cases:
+
+### Fixed Bugs:
+
+### Supported screens and browsers:
+
+## Deployment
+### Gitpod:
+- The project has been deployed to Github pages.
+- Once opened it redirects to Gitpod pages.
+- From the settings of the repository 
+- Change the settings of the branch to main branch and click save.
+- The link https://zoe34.github.io/world-quiz/ can be accessed by opening Github pages and the link appears on a green background.
+- The website was made public by changing the visibility to public in the settings section.
+
+## Credits:
+- Pixabay.com was used to generate the images for this project
+- The Stack Overflow website and W3Schools were used as guidance during the making of this project.
+
