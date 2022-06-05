@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz</title>
 </head>
 
 <body>
-
+<!-- the main page -->
     <div id="mainPage" class="hide">
         <h1 class="heading">World quiz</h1>
         <div id="mainButtons">
@@ -18,7 +19,7 @@
             <button id="helpSection" class="help">How to play</button>
         </div>
     </div>
-
+<!-- page with instructions that appesrs after clicking on "how to play" button -->
     <div id="helpPage" class="hide">
         <h2 class="helpHeading">How to play:</h2>
         <p class="explanation">The aim of the quiz is to guess the place represented by pictures. The quiz itself
@@ -27,7 +28,7 @@
             Enjoy the quiz!</p>
         <button id="back" class="backButton">Back to quiz</button>
     </div>
-
+<!-- Question one -->
     <div id="overlay" class="hide">
         <div class="questionOne">
             <h2>Where are those craters?</h2>
@@ -48,14 +49,14 @@
         </div>
     </div>
 
-
+<!-- overlay once the player answers correctly -->
     <div id="correctPage" class="hide">
         <div class="correctDiv">
             <h2 class="correctHeading">Correct!</h2>
         </div>
         <button id="correctAnswer" class="next">Next Question</button>
     </div>
-
+<!-- overlay once the player answers incorrectly -->
     <div id="incorrectPage" class="hide">
         <div class="incorrectDiv">
             <h2 class="incorrectHeading">Incorrect...Sorry:(</h2>
@@ -63,7 +64,7 @@
         <button id="incorrectAnswer" class="next">Next Question</button>
     </div>
 
-
+<!-- Question Two -->
     <div id="overlayTwo" class="hide">
         <div class="questionTwo">
             <h2>Where is this beach?</h2>
@@ -83,7 +84,7 @@
             </div>
         </div>
     </div>
-
+<!-- Question Three-->
     <div id="overlayThree" class="hide">
         <div class="questionThree">
             <h2>Where is this?</h2>
@@ -103,7 +104,7 @@
             </div>
         </div>
     </div>
-
+<!-- Question Four-->
     <div id="overlayFour" class="hide">
         <div class="questionFour">
             <h2>Where are those mountains?</h2>
@@ -123,7 +124,7 @@
             </div>
         </div>
     </div>
-
+<!-- End of quiz confirmation once the user finished all questions-->
     <div id="endOfQuiz" class="hide">
         <div class="greenBox">
             <p class="finalStatement">Congratulations, you completed the quiz!

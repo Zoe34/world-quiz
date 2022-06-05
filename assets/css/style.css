@@ -1,5 +1,9 @@
-/* ---------Heading */
+/* --------- Body text style */
+body {
+    font-family: 'Comfortaa', cursive;
+}
 
+/* --------- Heading */
 h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -12,6 +16,7 @@ h1 {
     height: 2em;
     width: 15em;
     margin-bottom: 1%;
+    font-family: 'Comfortaa', cursive;
 }
 
 .help {
@@ -19,11 +24,7 @@ h1 {
     display: block;
     height: 2em;
     width: 15em;
-}
-
-.helpHeading {
-    text-align: center;
-    font-size: 2rem;
+    font-family: 'Comfortaa', cursive;
 }
 
 /* ---------How to play */
@@ -32,6 +33,12 @@ h1 {
     font-size: 1rem;
     margin: 0 auto;
     display: block;
+    font-family: 'Comfortaa', cursive;
+}
+
+.helpHeading {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .explanation {
@@ -54,6 +61,7 @@ h1 {
     width: 15em;
     display: block;
     text-align: center;
+    font-family: 'Comfortaa', cursive;
 
 
 }
@@ -84,6 +92,7 @@ h1 {
     font-size: 2rem;
 }
 
+/* ---------hide and show allow for the overlays to appear and disappear for different questions */
 .hide {
     display: none;
 }
@@ -139,6 +148,7 @@ h1 {
     width: 15em;
     background-color: rgb(102, 163, 247);
     border: none;
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -218,11 +228,13 @@ h1 {
     font-size: 1.5rem;
 }
 
+/* ---------button that takes the user back to the main page of the quiz */
 .endQuiz {
     display: block;
     margin: 0 auto;
     height: 2em;
     width: 15em;
+    font-family: 'Comfortaa', cursive;
 
 }
 
@@ -233,4 +245,72 @@ h1 {
     padding: 4%;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+@media (max-width: 1000px) {
+    .imageOne {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.6, 0.6);
+        margin-right: 45%;
+    }
+
+    .imageTwo {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.6, 0.6);
+        margin-right: 45%;
+    }
+
+    .imageThree {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.6, 0.6);
+        margin-right: 45%;
+    }
+
+    .imageFour {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.6, 0.6);
+        margin-right: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    .imageOne {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        position: relative;
+        top: -10rem;
+        left: -2.5rem;
+    }
+
+    .imageTwo {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        position: relative;
+        top: -10rem;
+        left: -2rem;
+    }
+
+    .imageThree {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        position: relative;
+        top: -10rem;
+        left: -2rem;
+    }
+
+    .imageFour {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        position: relative;
+        top: -10rem;
+        left: -2.5rem;
+    }
 }
