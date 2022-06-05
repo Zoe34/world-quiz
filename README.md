@@ -57,3 +57,27 @@ An "End quiz" button will take the player back to the main page with "Start" and
 #### Question 4:
 !["Question4" screenshot](/docs/wireframes/wireframe6.png)
 
+## Technology
+This project was created using the Google browser and Gitpod.
+### To open through Gitpod:
+- Click on "Dashboard"
+- Click on the most recent world quiz workspace
+- Open the project through Visual Studio Code or in the browser (Google is recommended)
+- To see the preview in the browser type "python3 -m http.server" into the gitpod terminal.
+
+### To open through Github:
+- Enter https://github.com/Zoe34/world-quiz.git into the browser
+- Click on the green Gitpod button
+- Click on the World Quiz workspace that shows up
+- Open in the browser or via Visual Studio Code
+
+### Other tools used:
+- Google fonts
+- Balsamiq wireframes to create the wireframes
+- HTML and CSS languages
+
+## Testing
+### Code Validation:
+- When the code was passed through JSHint it returned no errors - the JavaScript code was pasted into JSHint.
+- When the code was passed through W3C Validator and showed no errors - the link https://zoe34.github.io/world-quiz/index.html was pasted into the Address bar.
+
