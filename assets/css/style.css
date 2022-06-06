@@ -7,7 +7,7 @@
 }
 
 #overlay{ 
-    overflow-x:hidden ;
+    overflow-x:hidden;
 }
 
 #overlayTwo{
@@ -32,6 +32,12 @@ h1 {
     font-size: 2.5rem;
     position:relative;
     top: 1rem;
+}
+
+.score{
+    position: relative;
+    top:6rem;
+    width: 30%;
 }
 
 /* ---------Start buttons */
@@ -74,7 +80,7 @@ h1 {
     margin-bottom: 1%;
     font-family: 'Comfortaa', cursive;
     position: relative;
-    top: 6rem;
+    top: 7.5rem;
     background-color: rgb(94, 172, 244);
     border-radius: 5px;
     font-weight: bold;
@@ -87,14 +93,14 @@ h1 {
     font-size: 2rem;
     text-align: center;
     position: relative;
-    top: 3.5rem;
+    top: 5.5rem;
 }
 
 .explanation {
     text-align: justify;
     font-size:x-large;
     position: relative;
-    top: 5rem;
+    top: 5.7rem;
     margin-right: 5%;
     margin-left: 5%;
 }

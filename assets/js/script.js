@@ -38,11 +38,16 @@ function checkScore(){
 function incrementCorrectScore() {
     let oldScore = document.getElementById("score").innerText;
     document.getElementById("score").innerText = ++oldScore;
-    
+
 }
 function incrementIncorrectScore(){
     let oldScore = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++oldScore;
+}
+
+function reset(){
+    oldScore = 0;
+    oldScore++;
 }
 
 /**
@@ -51,28 +56,41 @@ function incrementIncorrectScore(){
  */
 function initialiseGame() {
     showElement("mainPage");
+    document.getElementById("endQuiz").addEventListener("click", reset);
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
     document.getElementById("helpSection").addEventListener("click", helpOn);
     document.getElementById("back").addEventListener("click", backOn);
 
     document.getElementById("hawaii").addEventListener("click", correctOn);
+    document.getElementById("hawaii").addEventListener("click", incrementCorrectScore);
     document.getElementById("japan").addEventListener("click", incorrectOn);
+    document.getElementById("japan").addEventListener("click", incrementIncorrectScore);
     document.getElementById("indonesia").addEventListener("click", incorrectOn);
+    document.getElementById("indonesia").addEventListener("click", incrementIncorrectScore);
 
     document.getElementById("australia").addEventListener("click", correctOn);
+    document.getElementById("australia").addEventListener("click", incrementCorrectScore);
     document.getElementById("turkey").addEventListener("click", incorrectOn);
+    document.getElementById("turkey").addEventListener("click", incrementIncorrectScore);
     document.getElementById("brazil").addEventListener("click", incorrectOn);
+    document.getElementById("brazil").addEventListener("click", incrementIncorrectScore);
 
     document.getElementById("correctAnswer").addEventListener("click", displayNextQuestion);
     document.getElementById("incorrectAnswer").addEventListener("click", displayNextQuestion);
 
     document.getElementById("china").addEventListener("click", incorrectOn);
+    document.getElementById("china").addEventListener("click", incrementIncorrectScore);
     document.getElementById("vietnam").addEventListener("click", correctOn);
+    document.getElementById("vietnam").addEventListener("click", incrementCorrectScore);
     document.getElementById("philippines").addEventListener("click", incorrectOn);
+    document.getElementById("philippines").addEventListener("click", incrementIncorrectScore);
 
     document.getElementById("arizona").addEventListener("click", incorrectOn);
+    document.getElementById("arizona").addEventListener("click", incrementIncorrectScore);
     document.getElementById("chinaTwo").addEventListener("click", correctOn);
+    document.getElementById("chinaTwo").addEventListener("click", incrementCorrectScore);
     document.getElementById("peru").addEventListener("click", incorrectOn);
+    document.getElementById("peru").addEventListener("click", incrementIncorrectScore);
 
 }
 
