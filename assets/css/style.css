@@ -6,10 +6,21 @@
     border: none;
 }
 
-html { 
-    height: 100% 
+#overlay{ 
+    overflow-x:hidden ;
 }
 
+#overlayTwo{
+    overflow-x: hidden;
+}
+
+#overlayThree{
+    overflow-x: hidden;
+}
+
+#overlayFour{
+    overflow-x: hidden;
+}
 body {
     font-family: 'Comfortaa', cursive;
     min-height: 100%;
@@ -422,4 +433,142 @@ h1 {
         left: -1.7rem
     }
 
+}
+
+@media (max-width: 650px){
+    .imageOne {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.35, 0.35);
+        position: relative;
+        top: -10rem;
+        left: -7rem;
+    }
+
+    .imageTwo{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.35, 0.35);
+        position: relative;
+        top: -10rem;
+        left: -7rem;
+    }
+
+    .imageThree{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.35, 0.35);
+        position: relative;
+        top: -10rem;
+        left: -7rem;
+    }
+
+    .imageFour{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.35, 0.35);
+        position: relative;
+        top: -10rem;
+        left: -7rem;
+    }
+
+    .option{
+        position:relative;
+        top: -23rem;
+        left: -2.7rem
+    }
+}
+
+@media (max-width: 550px){
+    .imageOne {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        left: -7rem;
+    }
+
+    .imageTwo{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        left: -7rem;
+    }
+
+    .imageThree{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        left: -7rem;
+    }
+
+    .imageFour{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        left: -7rem;
+    }
+
+    .option{
+        position:relative;
+        top: -33rem;
+        left: -2.7rem
+    }
+}
+
+@media (max-width: 430px){
+
+    body{ 
+        height: 100%;
+        width: 100%;
+    }
+
+    .imageOne {
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        margin: 0 30% 0 10%;
+    }
+
+    .imageTwo{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        margin: 0 30% 0 10%;
+    }
+
+    .imageThree{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        margin: 0 30% 0 10%;
+    }
+
+    .imageFour{
+        transform: scale(0.5, 0.5);
+        -ms-transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.3, 0.3);
+        position: relative;
+        top: -15rem;
+        margin: 0 30% 0 10%;
+    }
+
+    .option{
+        position:relative;
+        top: -33rem;
+        left: -3.5rem
+    }
 }
