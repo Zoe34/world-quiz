@@ -18,6 +18,9 @@ function displayNextQuestion() {
     currentQuestion++;
 }
 
+/**
+ * Increases the score by one for the incorrect and correct answers once the option has been selected.
+ */
 function checkScore(){
     if(document.getElementById('hawaii').clicked == true){
         incrementCorrectScore();
