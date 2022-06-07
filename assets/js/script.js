@@ -43,6 +43,7 @@ function incrementCorrectScore() {
     document.getElementById("score").innerText = ++oldScore;
 
 }
+
 function incrementIncorrectScore(){
     let oldScore = document.getElementById("incorrect").innerText;
     document.getElementById("incorrect").innerText = ++oldScore;
@@ -55,6 +56,8 @@ function incrementIncorrectScore(){
 function initialiseGame() {
     showElement("mainPage");
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
+    document.getElementById("startQuiz").addEventListener("click", checkScore);
+
     document.getElementById("helpSection").addEventListener("click", helpOn);
     document.getElementById("back").addEventListener("click", backOn);
 

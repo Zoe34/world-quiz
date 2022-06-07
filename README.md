@@ -107,12 +107,77 @@ This project was created using the Google browser and Gitpod.
 !["reset-scores" screenshot](/docs/screenshots/reset-scores.png)
 
 ### Fixed Bugs:
-
+- A bug I came across was in the JavaScript; I had several redundant functions that needed removing and the "hideElement" and "showElement" functions wouldn't work, as the code needed cleaning up.
+- This has been fixed by cleaning up the code and testing with JSHint.
+- An error that came up in JSHint was an unused variable - function checkScore().
+- This has been fixed by calling the checkScore function in the initialiseGame function.
 
 
 ### Supported screens and browsers:
-- Chrome simulator
-- Chrome developer tools
+- Chrome simulator and Chrome developer tools used to add responsiveness.
+
+#### At max screen width of 800px (medium):
+#### Start page
+!["start page" screenshot](/docs/screenshots/start-page-800px.png)
+#### Help page
+!["help page" screenshot](/docs/screenshots/help-page-800px.png)
+#### Question One
+!["question-one" screenshot](/docs/screenshots/question-one-800px.png)
+#### Question Two
+!["question-two" screenshot](/docs/screenshots/question-two-800px.png)
+#### Question Three
+!["question-three" screenshot](/docs/screenshots/question-three-800px.png)
+#### Question Four
+!["question four" screenshot](/docs/screenshots/question-four-800px.png)
+#### Incorrect Page
+!["incorrect page" screenshot](/docs/screenshots/incorrect-page-800px.png)
+#### Correct Page
+!["correct page" screenshot](/docs/screenshots/correct-page-800px.png)
+#### Last Page
+!["last page" screenshot](/docs/screenshots/last-page-800px.png)
+
+#### At max screen width of 650px (medium-small):
+#### Start page
+!["start page" screenshot](/docs/screenshots/start-page-650px.png)
+#### Help page
+!["help page" screenshot](/docs/screenshots/help-page-650px.png)
+#### Question One
+!["question one" screenshot](/docs/screenshots/question-one-650px.png)
+#### Question Two
+!["question two" screenshot](/docs/screenshots/question-two-650px.png)
+#### Question Three
+!["question three" screenshot](/docs/screenshots/question-three-650px.png)
+#### Question Four
+!["question four" screenshot](/docs/screenshots/question-four-650px.png)
+#### Incorrect Page
+!["incorrect page" screenshot](/docs/screenshots/incorrect-page-650px.png)
+#### Correct Page
+!["correct page" screenshot](/docs/screenshots/correct-page-650px.png)
+#### Last Page
+!["last page" screenshot](/docs/screenshots/last-page-650px.png)
+
+#### At max screen width of 430px (small):
+#### Start page
+!["start page" screenshot](/docs/screenshots/start-page-430px.png)
+#### Help page
+!["help page" screenshot](/docs/screenshots/help-page-430px.png)
+#### Question One
+!["question-one" screenshot](/docs/screenshots/question-one-430px.png)
+#### Question Two
+!["question-two" screenshot](/docs/screenshots/question-two-430px.png)
+#### Question Three
+!["question-three" screenshot](/docs/screenshots/question-three-430px.png)
+#### Question Four
+!["question four" screenshot](/docs/screenshots/question-four-430px.png)
+#### Incorrect Page
+!["incorrect page" screenshot](/docs/screenshots/incorrect-page-430px.png)
+#### Correct Page
+!["correct page" screenshot](/docs/screenshots/correct-page-430px.png)
+#### Last Page
+!["last page" screenshot](/docs/screenshots/last-page-430px.png)
+
+
+
 
 ## Deployment
 ### Gitpod:
