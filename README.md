@@ -32,6 +32,7 @@ An "End quiz" button will take the player back to the main page with "Start" and
 - The answer options are always a light green colour and the "next question" buttons are all a neutral blue.
 
 ## Wireframes
+(The project has updates, such as the scoring system that aren't included in the wireframes)
 #### Main page:
 !["Main page" screenshot](/docs/wireframes/start-page.png)
 
@@ -64,10 +65,11 @@ An "End quiz" button will take the player back to the main page with "Start" and
 This project was created using the Google browser and Gitpod.
 
 ### Other tools used:
-- Google fonts - used in the project. The font used was Raleway.
-- Balsamiq wireframes to create the wireframes
-- HTML and CSS languages
-- JavaScript 
+- Google fonts - used in the project. The font used was Raleway
+- Balsamiq wireframes to create the wireframes before the project was created
+- HTML was used to build the structure of the webpage
+- CSS was used to style the page and add responsiveness
+- JavaScript was used to add interactivity to the quiz
 
 ## Testing
 ### Code Validation:
@@ -75,8 +77,38 @@ This project was created using the Google browser and Gitpod.
 - When the code was passed through W3C Validator and showed no errors - the link https://zoe34.github.io/world-quiz/index.html was pasted into the Address bar.
 
 ### Test Cases:
+- As a new user I can access the game by pasting the link https://zoe34.github.io/world-quiz/ into the browser
+- I can start the game by clicking "Start"
+- I can access the instructions for the game by clicking the "How to play" button
+!["start page" screenshot](/docs/screenshots/start.png)
+
+- I can return to the main page by clicking the blue "Back to quiz" button
+!["instructions" screenshot](/docs/screenshots/instruction-page.png)
+
+- I can submit question answers by clicking on one of the three green options below the picture
+!["options" screenshot](/docs/screenshots/options.png)
+
+- After clicking one of the options a green pop up appears if the answer was correct. This has the option of moving onto the next question by clicking "Next question"
+!["correct answer page" screenshot](/docs/screenshots/correct-page.png)
+
+- After clicking an option a red pop up appears if the answer was incorrect and I can access the next question by clicking the blue "Next question" button
+!["incorrect answer page" screenshot](/docs/screenshots/incorrect-page.png)
+
+- I can view my score during the game in the score section at the top of the page. With each correct answer the "correct" section increases by one and with each incorrect answer the "incorrect" section increases by one.
+!["scores" screenshot](/docs/screenshots/scores.png)
+
+
+- After completing question 4 I can access the confirmation page with a message saying the quiz has ended.
+- I can still see my score on the top of the page.
+- I can return to the main page by clicking the blue "End Quiz" button. 
+!["last page" screenshot](/docs/screenshots/last-page.png)
+
+- Clicking this button would reset my score to 0 so the game can be started again.
+!["reset-scores" screenshot](/docs/screenshots/reset-scores.png)
 
 ### Fixed Bugs:
+
+
 
 ### Supported screens and browsers:
 - Chrome simulator
