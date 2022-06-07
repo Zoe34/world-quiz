@@ -6,10 +6,12 @@
     border: none;
 }
 
+/* --------- Start page buttons */
 #mainButtons{
     height:1rem;
 }
 
+/* --------- score above question */
 .score{
     display: block;
     text-align: center;
@@ -22,7 +24,7 @@
     
 }
 
-
+/* --------- stops horizontal scrolling in responsive design */
 #overlay{ 
     overflow-x:hidden;
 }
@@ -72,6 +74,7 @@ h1 {
     font-size: large;
 }
 
+/* --------- help button */
 .help {
     margin: 0 auto;
     display: block;
@@ -87,7 +90,7 @@ h1 {
 
 }
 
-/* ---------How to play */
+/* ---------takes user back to start page from help page */
 .backButton {
     margin: 0 auto;
     display: block;
@@ -131,6 +134,7 @@ h1 {
 
 }
 
+/* --------- all options under the questions */
 .option {
     margin-left: 5rem;
     height: 3em;
@@ -354,6 +358,7 @@ h1 {
 
 }
 
+/* --------- green box background on last page */
 .greenBox {
     width: 17em;
     background-color: rgb(121, 197, 121);

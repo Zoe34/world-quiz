@@ -18,6 +18,8 @@ Leads to question one
 #### How to play Button:
 Leads to the help page wth instructions.
 !["start buttons" screenshot](/docs/screenshots/start-buttons.png)
+!["help page" screenshot](/docs/screenshots/instruction-page.png)
+
 
 
 #### Question section:
