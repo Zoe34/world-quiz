@@ -11,11 +11,13 @@
 }
 
 .score{
-    display: inline;
-    margin-left: 47%;
+    display: block;
+    text-align: center;
+    font-size: 150%;
+    margin: 0 auto;
 }
 
-.scores-section{
+#scores-section{
     margin-top: 3%;
     
 }
@@ -546,11 +548,11 @@ h1 {
 
 @media (max-width: 430px){
 
-.scores-section > #score{
+#scores-section > #score{
     width: 30%;
 }
 
-.scores-section > #incorrect{
+#scores-section > #incorrect{
     width: 30%;
 }
 
@@ -594,7 +596,7 @@ h1 {
         top: 2rem;
     }
 
-    .scores-section > .score{
+    #scores-section > .score{
         text-align: center;
         display: inline-block;
         margin-top: 2rem;

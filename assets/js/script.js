@@ -136,6 +136,7 @@ function overlayOn() {
     currentQuestion++;
     showElement("overlay");
     hideElement("mainButtons");
+    showElement("scores-section");
 }
 
 /**
@@ -145,6 +146,8 @@ function overlayTwoOn() {
     showElement("overlayTwo");
     hideElement("incorrectPage");
     hideElement("correctPage");
+    showElement("scores-section");
+
 }
 
 /**
@@ -154,6 +157,8 @@ function overlayThreeOn() {
     showElement("overlayThree");
     hideElement("incorrectPage");
     hideElement("correctPage");
+    showElement("scores-section");
+
 }
 
 /**
@@ -163,6 +168,8 @@ function overlayFourOn() {
     showElement("overlayFour");
     hideElement("incorrectPage");
     hideElement("correctPage");
+    showElement("scores-section");
+
 }
 
 /**
@@ -193,6 +200,7 @@ function correctOn() {
     hideElement("overlayTwo");
     hideElement("overlayThree");
     hideElement("overlayFour");
+    showElement("scores-section");
 
 }
 
@@ -205,6 +213,7 @@ function incorrectOn() {
     hideElement("overlayTwo");
     hideElement("overlayThree");
     hideElement("overlayFour");
+    showElement("scores-section");
 }
 
 window.addEventListener('DOMContentLoaded', initialiseGame);
