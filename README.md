@@ -56,7 +56,7 @@ Every time the user scores correctly or incorrectly this is added up in the scor
 
 
 ## Future features
-- Timer - the quiz will be timed from the moment the player clicks "Start" to the moment where they click "Submit" on the last question.
+- Timer - the quiz will be timed from the moment the player clicks "Start" to the moment where they click "End Quiz" on the last page.
 
 ## Typography and color scheme
 - The main colours in this project are blue an green to make the buttons stand out and make the game more intuitive. 
