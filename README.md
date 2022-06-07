@@ -1,30 +1,59 @@
 # world-quiz
 ## Purpose of the project
-The project is a quiz intended for kids from the age of 6 years old and above. It is a responsive game, displaying various locations around the world and the aim is for the player to guess correctly where this is. The style is colourful and easy to navigate.
+The project is a quiz intended for kids from the age of 6 years old and above. It is a responsive game, displaying various locations around the world and the aim is for the player to guess correctly where this is. The style is colourful to draw attention and the design is kept simple and bold.
 
 ## User stories
-- As a visiting user I would like to view the instructions.
-- As a new user I would like to access the game by clicking "Start" and I would like to learn the rules by clicking "How to play?"
+- As a visiting user I would like to view the instructions of the quiz.
+- As a new user I would like to access the game by clicking "Start" and I would like to learn the rules by clicking "How to play"
 - As a new user I would like to play an interactive game, which is responsive on all devices.
+- As a new user I would like to see my progress through a score that displays on the page.
 
 ## Features
 #### Heading:
 A big and clear heading called "World quiz".
+!["heading" screenshot](/docs/screenshots/heading.png)
+
+#### Start button:
+Leads to question one
+#### How to play Button:
+Leads to the help page wth instructions.
+!["start buttons" screenshot](/docs/screenshots/start-buttons.png)
+
+
 #### Question section:
 A question asking the user where in the world they think a place is located.
+!["question" screenshot](/docs/screenshots/question.png)
+
+
 #### Question Image:
 The image is underneath the question and shows the player a remote location which is used to guess the correct answer.
+!["image" screenshot](/docs/screenshots/image.png)
+
+
 #### Answer options:
 Under the image section there are 3 answer options. The user has to pick one - this follows a message confirming if the answer was correct or not.
-#### Next button:
-- An overlay message appears with the sign "Correct" or "Incorrect...sorry". The user presses the next button after picking their location of choice. 
-- Both correct and incorrect slides have a "next question" button, which leads to the next question.
+!["options" screenshot](/docs/screenshots/answers.png)
+
+
+#### Correct/incorrect page confirmation:
+An overlay message appears with the sign "Correct" or "Incorrect...sorry". The user presses the blue"next question" button after picking their location of choice. 
+Both correct and incorrect slides have a "next question" button, which leads to the next question.
+!["correct answer page" screenshot](/docs/screenshots/correct-page.png)
+!["incorrect answer page" screenshot](/docs/screenshots/incorrect-page.png)
+
+
 #### Congratulations page:
-- After the user answers their last question this leads to a "congratulations" message.
-An "End quiz" button will take the player back to the main page with "Start" and "How to play".
+After the user answers their last question this leads to a "congratulations" message.
+A blue "End quiz" button will take the player back to the main page with "Start" and "How to play".
+!["confirmation page" screenshot](/docs/screenshots/last-page.png)
+
+
+#### Score counter
+Every time the user scores correctly or incorrectly this is added up in the score section above the question. The counter is reset after every game.
+!["score count" screenshot](/docs/screenshots/scores.png)
+
 
 ## Future features
-- Scoring - the user will receive a score of their correctly answered questions at the end of the quiz.
 - Timer - the quiz will be timed from the moment the player clicks "Start" to the moment where they click "Submit" on the last question.
 
 ## Typography and color scheme
@@ -109,8 +138,9 @@ This project was created using the Google browser and Gitpod.
 ### Fixed Bugs:
 - A bug I came across was in the JavaScript; I had several redundant functions that needed removing and the "hideElement" and "showElement" functions wouldn't work, as the code needed cleaning up.
 - This has been fixed by cleaning up the code and testing with JSHint.
-- An error that came up in JSHint was an unused variable - function checkScore().
-- This has been fixed by calling the checkScore function in the initialiseGame function.
+
+- When clicking the start button the incorrect answer had one point before the game began. 
+- This bug was fixed by removing the checkScore function.
 
 
 ### Supported screens and browsers:
