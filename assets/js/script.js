@@ -21,22 +21,6 @@ function displayNextQuestion() {
 /**
  * Increases the score by one for the incorrect and correct answers once the option has been selected.
  */
-function checkScore(){
-    if(document.getElementById('hawaii').clicked == true){
-        incrementCorrectScore();
-    } else if (document.getElementById('australia').clicked == true){
-        incrementCorrectScore();
-
-    } else if (document.getElementById('vietnam').clicked == true){
-        incrementCorrectScore();
-
-    } else if (document.getElementById('chinaTwo').clicked == true){
-        incrementCorrectScore();
-
-    } else{
-        incrementIncorrectScore();
-    }
-}
 
 function incrementCorrectScore() {
     let oldScore = document.getElementById("score").innerText;
@@ -56,8 +40,6 @@ function incrementIncorrectScore(){
 function initialiseGame() {
     showElement("mainPage");
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
-    document.getElementById("startQuiz").addEventListener("click", checkScore);
-
     document.getElementById("helpSection").addEventListener("click", helpOn);
     document.getElementById("back").addEventListener("click", backOn);
 
