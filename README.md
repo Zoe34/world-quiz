@@ -67,6 +67,7 @@ This project was created using the Google browser and Gitpod.
 - Google fonts - used in the project. The font used was Raleway.
 - Balsamiq wireframes to create the wireframes
 - HTML and CSS languages
+- JavaScript 
 
 ## Testing
 ### Code Validation:
@@ -78,6 +79,8 @@ This project was created using the Google browser and Gitpod.
 ### Fixed Bugs:
 
 ### Supported screens and browsers:
+- Chrome simulator
+- Chrome developer tools
 
 ## Deployment
 ### Gitpod:

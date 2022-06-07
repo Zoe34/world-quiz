@@ -48,18 +48,12 @@ function incrementIncorrectScore(){
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
-function reset(){
-    oldScore = 0;
-    oldScore++;
-}
-
 /**
  * When a button is clicked during the game, the appropriate function is called e.g.,
  * after answering correctly a confirmation appears: "Correct!"
  */
 function initialiseGame() {
     showElement("mainPage");
-    document.getElementById("endQuiz").addEventListener("click", reset);
     document.getElementById("startQuiz").addEventListener("click", overlayOn);
     document.getElementById("helpSection").addEventListener("click", helpOn);
     document.getElementById("back").addEventListener("click", backOn);
@@ -94,8 +88,8 @@ function initialiseGame() {
     document.getElementById("chinaTwo").addEventListener("click", incrementCorrectScore);
     document.getElementById("peru").addEventListener("click", incorrectOn);
     document.getElementById("peru").addEventListener("click", incrementIncorrectScore);
-
 }
+
 
 /**
  * The hideElement function allows to hide elements that are not supposed to be shown on certain
@@ -186,9 +180,8 @@ function endOn() {
 }
 
 function showMainPage() {
-    showElement("mainPage");
-    showElement("mainButtons");
-    hideElement("endOfQuiz");
+
+    location.reload();
 }
 
 /**

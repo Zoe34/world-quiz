@@ -6,6 +6,21 @@
     border: none;
 }
 
+#mainButtons{
+    height:1rem;
+}
+
+.score{
+    display: inline;
+    margin-left: 47%;
+}
+
+.scores-section{
+    margin-top: 3%;
+    
+}
+
+
 #overlay{ 
     overflow-x:hidden;
 }
@@ -93,8 +108,7 @@ h1 {
     text-align: center;
     position: relative;
     top: 5.5rem;
-    background-color:rgb(121, 197, 121);
-    margin-bottom:10%;
+    margin-bottom: 5%;
 }
 
 .explanation {
@@ -531,6 +545,14 @@ h1 {
 }
 
 @media (max-width: 430px){
+
+.scores-section > #score{
+    width: 30%;
+}
+
+.scores-section > #incorrect{
+    width: 30%;
+}
 
     #mainButtons{
         height: 1rem;
