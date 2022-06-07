@@ -78,7 +78,7 @@ This project was created using the Google browser and Gitpod.
 
 ### Test Cases:
 - As a new user I can access the game by pasting the link https://zoe34.github.io/world-quiz/ into the browser
-- I can start the game by clicking "Start"
+- I can start the game by clicking "Start", this takes me to question 1
 - I can access the instructions for the game by clicking the "How to play" button
 !["start page" screenshot](/docs/screenshots/start.png)
 
@@ -137,6 +137,7 @@ This project was created using the Google browser and Gitpod.
 !["last page" screenshot](/docs/screenshots/last-page-800px.png)
 
 #### At max screen width of 650px (medium-small):
+(The max width of 550px is also in the category of medium-small and looks very similar to 650px)
 #### Start page
 !["start page" screenshot](/docs/screenshots/start-page-650px.png)
 #### Help page
